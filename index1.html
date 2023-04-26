@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Prakhar</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+    <!-- 1st circle -->
+    <div class="circle-1"></div>
+
+    <!-- 2nd circle -->
+    <div class="circle-2"></div>
+    <div class="blob-1">
+        <img src="./blobanimation.svg" loading="lazy" alt="">
+    </div>
+
+    <!-- content wrapper -->
+    <div class="content-wrapper">
+
+        <div class="card-wrapper">
+
+
+            <!-- image section -->
+            <div>
+                <img src="./profile picture.png" loading="lazy" alt="error 404">
+            </div>
+
+            <!-- user name -->
+            <div class="user-name">
+                <h2> Prakhar chandra gupta</h2>
+            </div>
+
+            <!-- sub-heading -->
+            <div class="sub-heading">
+                <h3>Web Developer, Google</h3>
+            </div>
+
+            <!-- button section -->
+            <div class="btn-group">
+
+                <!-- 1st one -->
+                <button onclick="openModal()" class="btn-share primary-btn">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <polyline points="13 17 18 12 13 7" />
+                    <polyline points="6 17 11 12 6 7" />
+                    </svg>
+                    <div>Share My Profile</div>
+                </button>
+
+                <!-- 2nd one -->
+                <button class="btn-follow primary-btn">Follow Me</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+
+        <!-- header section -->
+        <div class="modal-header">
+
+            <div class="modal-heading">
+                <h1>share my profile</h1>
+            </div>
+
+            <!-- cross-icon -->
+            <div class="modal-cross-icon" onclick="closeModal()">
+
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <polyline points="4 14 10 14 10 20" />
+                <polyline points="20 10 14 10 14 4" />
+                <line x1="14" y1="10" x2="21" y2="3" />
+                <line x1="3" y1="21" x2="10" y2="14" />
+                </svg>
+
+            </div>
+
+        </div>
+
+
+        <!-- share link section -->
+        <div class="modal-share">
+
+
+            <!-- heading section -->
+            <div class="modal-share-heading">
+                <h3>Share this via</h3>
+            </div>
+           
+      
+            <!-- icon pack -->
+            <div class="modal-share-icon">
+      
+              <a href="#" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+      
+              <a href="#" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+      
+              <a href="#" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+      
+              <a href="#" class="icon" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+      
+              <a href="#" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+      
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- close overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+
+    </div>
+
+    <!-- font-awesome script -->
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+
+    <!-- main script -->
+    <script src="./index.js"></script>
+
+
+</body>
+</html>
